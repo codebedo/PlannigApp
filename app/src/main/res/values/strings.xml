@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PlaningApplication</string>
+    <string name="save">Save</string>
+    <string name="new_task">New Task</string>
+    <string name="tasks">Tasks</string>
+    <string name="Etkinlik_adı">Etkinlik Adı</string>
+    <string name="Kaydet">Kaydet</string>
+    <string name="Geri">Geri</string>
+    <string name="ileri">ileri</string>
+</resources>

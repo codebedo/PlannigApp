@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2E1ED"
+    tools:context=".KayitOl">
+
+    <EditText
+        android:id="@+id/mail2"
+        android:layout_width="288dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
+        android:drawableRight="@drawable/baseline_alternate_email_24"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="286dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:ems="10"
+        android:hint="şifre giriniz"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/mail2"
+        app:layout_constraintStart_toStartOf="@+id/mail2"
+        app:layout_constraintTop_toBottomOf="@+id/mail2" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="252dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#00BCD4"
+        android:text="oluştur"
+        app:layout_constraintEnd_toEndOf="@+id/sifre"
+        app:layout_constraintStart_toStartOf="@+id/sifre"
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="184dp"
+        android:text="Hesap oluştur"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

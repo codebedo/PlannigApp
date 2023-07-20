@@ -1,0 +1,70 @@
+package com.example.planingapplication;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.RandomAccess;
+
+public class Event
+{
+    // burada etkinliği bir dizi listesi olarak alınması sağlandı
+    public static ArrayList<Event> eventsList = new ArrayList<>();
+
+    public Event() {
+    }
+    // burada etkinliklerin tarih eşitlemesi ve eklendiğinde tarihin alınması sağlandı
+    public static RandomAccess eventsForDate(LocalDate date)
+    {
+        ArrayList<Event> events = new ArrayList<>();
+
+        for(Event event : eventsList)
+        {
+            if(event.getDate().equals(date))
+                events.add(event);
+        }
+
+        return events;
+    }
+    // burada etkinliklerin değerlerinin tanımı yapıldı
+    private String name;
+    private LocalDate date;
+    private LocalTime time;
+
+    public Event(String name, LocalDate date, LocalTime time)
+    {
+        this.name = name;
+        this.date = date;
+        this.time = time;
+    }
+    // burada etkinlikler ekranının değerlerine dönüş değeri için ayrı ayrı methodlar yazıldı
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public LocalDate getDate()
+    {
+        return date;
+    }
+
+    public void setDate(LocalDate date)
+    {
+        this.date = date;
+    }
+
+    public LocalTime getTime()
+    {
+        return time;
+    }
+
+    public void setTime(LocalTime time)
+    {
+        this.time = time;
+    }
+}

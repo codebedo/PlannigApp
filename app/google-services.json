@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "280682768551",
+    "project_id": "planingapplication2",
+    "storage_bucket": "planingapplication2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280682768551:android:d74c2d2ee4e37490959382",
+        "android_client_info": {
+          "package_name": "com.example.planingapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280682768551-658rek3obc3p30jjeoosaj2fqcpdti0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4pp_vaVw_Zqwwl36IMRjPD9n9Uv4Acd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280682768551-658rek3obc3p30jjeoosaj2fqcpdti0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

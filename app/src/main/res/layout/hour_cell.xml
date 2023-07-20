@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/timeTV"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@color/pagecolor"
+        android:text="10:00"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/event1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#93BDDF"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Event 1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/event2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#93BDDF"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Event 2"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/event3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#93BDDF"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Event 3"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+</LinearLayout>

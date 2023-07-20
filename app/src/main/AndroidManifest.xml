@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlaningApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyEventEdit"
+            android:exported="false" />
+        <activity
+            android:name=".WeekView"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyPlans"
+            android:exported="false" />
+        <activity
+            android:name=".MontlyhPlans"
+            android:exported="false" />
+        <activity
+            android:name=".DailyPlans"
+            android:exported="false" />
+        <activity
+            android:name=".Yapilacaklar"
+            android:exported="false" />
+        <activity
+            android:name=".OdakZamani"
+            android:exported="false"
+            android:parentActivityName=".E2Anasayfa" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".E2Anasayfa" />
+        <activity
+            android:name=".E2Anasayfa"
+            android:exported="false" />
+        <activity
+            android:name=".SifremiUnuttum"
+            android:exported="false"
+            android:parentActivityName=".E1ekrani" />
+        <activity
+            android:name=".KayitOl"
+            android:exported="false"
+            android:parentActivityName=".E1ekrani" />
+        <activity
+            android:name=".E1ekrani"
+            android:exported="true" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

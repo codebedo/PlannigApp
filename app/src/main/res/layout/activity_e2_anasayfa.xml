@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2E1ED"
+    tools:context=".E2Anasayfa">
+    <Button
+        android:id="@+id/günlük_plan"
+        android:layout_width="280dp"
+        android:text="Günlük planlar"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_calendar_today_24"
+        app:layout_constraintEnd_toEndOf="@+id/planlar"
+        app:layout_constraintStart_toStartOf="@+id/planlar"
+        app:layout_constraintTop_toBottomOf="@+id/planlar"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <Button
+        android:id="@+id/aylık_plan"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Aylık planlar"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        app:layout_constraintEnd_toEndOf="@+id/haftalık_plan"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/haftalık_plan"
+        app:layout_constraintTop_toBottomOf="@+id/haftalık_plan"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <Button
+        android:id="@+id/zamanlayici"
+        android:layout_width="280dp"
+        android:text="Odak Sayaçı"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_timer_24"
+        app:layout_constraintEnd_toEndOf="@+id/uyarılar"
+        app:layout_constraintStart_toStartOf="@+id/uyarılar"
+        app:layout_constraintTop_toBottomOf="@+id/uyarılar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/uyarılar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_wb_twilight_24"
+        app:layout_constraintEnd_toEndOf="@+id/aylık_plan"
+        app:layout_constraintStart_toStartOf="@+id/aylık_plan"
+        app:layout_constraintTop_toBottomOf="@+id/aylık_plan"
+        android:text="Uyarılar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/haftalık_plan"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Haftalık Planlar"
+        android:drawableLeft="@drawable/baseline_calendar_view_week_24"
+        app:layout_constraintEnd_toEndOf="@+id/günlük_plan"
+        app:layout_constraintStart_toStartOf="@+id/günlük_plan"
+        app:layout_constraintTop_toBottomOf="@+id/günlük_plan"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/planlar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Yapılacaklar"
+        android:drawableLeft="@drawable/baseline_check_box_24"
+        app:layout_constraintEnd_toEndOf="@+id/etkinlik"
+        app:layout_constraintStart_toStartOf="@+id/etkinlik"
+        app:layout_constraintTop_toBottomOf="@+id/etkinlik"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/etkinlik"
+        android:layout_width="163dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="200dp"
+        android:text="Etkinlilkler"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_person_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
